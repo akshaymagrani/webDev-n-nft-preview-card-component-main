@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/akshaymagrani/webDev-n-nft-preview-card-component-main)
+- Live Site URL: [Live site URL](https://web-dev-n-nft-preview-card-component-main-nqybsz4v2.vercel.app/)
 
 ## My process
 
