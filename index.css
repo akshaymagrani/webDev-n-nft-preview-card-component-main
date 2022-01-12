@@ -31,7 +31,7 @@ main{
 /*==== Card ====*/
 .card{
     background: var(--card_BG);
-    width: 320px;
+    width: 320px;  /* uses definitive px value, want to change that into responsive values */
     padding: 1.5em;
     border-radius: 15px;
     position: relative;
