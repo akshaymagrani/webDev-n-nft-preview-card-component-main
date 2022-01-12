@@ -31,7 +31,7 @@ main{
 /*==== Card ====*/
 .card{
     background: var(--card_BG);
-    max-width: 320px;
+    width: 320px;
     padding: 1.5em;
     border-radius: 15px;
     position: relative;
@@ -48,6 +48,17 @@ main{
         opacity: 1;
         border-radius: 10px;
         background-color: cyan;
+        height:300px;
+        width:300px;
+    }
+    @media screen and (min-width: 380px) {
+        .card{
+            width: 320px;
+        }
+        .equilibrium-logo{
+            height: 320px;
+            width: 320px;
+        }
     }
     .overlay {
         position: absolute;
