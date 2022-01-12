@@ -94,7 +94,7 @@ main{
         display: flex;
         align-items: center;
     }
-    .card-content div svg{
+    .card-content div img.icon{
         padding-right: 5px;
     }
 hr{
