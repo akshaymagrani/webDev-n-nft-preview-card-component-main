@@ -31,21 +31,20 @@ main{
 /*==== Card ====*/
 .card{
     background: var(--card_BG);
-    max-width: fit-content;
+    max-width: 320px;
     padding: 1.5em;
     border-radius: 15px;
-    margin: 0 auto;
     position: relative;
 }
     
-    /* ==== Header ==== */
-    header img,header h1,header p{
+    /* ==== Card ==== */
+    .equilibrium-logo,.card h1,.card p{
         margin-bottom: 1em;
     }
     .image-container{
         position: relative;
     }
-    .card header img{
+    .equilibrium-logo{
         opacity: 1;
         border-radius: 10px;
         background-color: cyan;
@@ -64,7 +63,7 @@ main{
         background-color: hsla(var(--cyan-o), 0.6); /* to add opacity to background specifically, without affecting the icon */
         
     }
-    .card header svg{
+    .card svg{
         color: var(--white);
         position: absolute;
         top: 50%;
@@ -112,8 +111,16 @@ hr{
 .card footer *{
     margin: 1em 1em 0 0;
 }
-span{
+.active{
+    text-decoration: none;
     color: var(--white);
+
+}
+.active:visited{
+    color: wheat;
+}
+.active:hover{
+    color: var(--cyan);
 }
 
 .attribution { font-size: 11px; text-align: center; padding: 10px 0}
