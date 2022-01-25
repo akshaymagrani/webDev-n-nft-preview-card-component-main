@@ -20,18 +20,18 @@ body{
     font-size: 18px;
     color: var(--softBlue);
     background-color: var(--main_BG);
-}
-main{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    height: calc(100vh - 2em); /* to ensure that screen size remains full size of the screen. */
+    /* This centers the card in the center for all screen sizes. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
 }
 
 /*==== Card ====*/
 .card{
     background: var(--card_BG);
-    width: 320px;
+    width: 300px;  /* uses definitive px value, want to change that into responsive values */
     padding: 1.5em;
     border-radius: 15px;
     position: relative;
@@ -52,6 +52,10 @@ main{
         width:300px;
     }
     @media screen and (min-width: 380px) {
+        body{
+            padding: 0;
+            height: 100vh;
+        }
         .card{
             width: 320px;
         }
@@ -66,7 +70,7 @@ main{
         bottom: 0;
         left: 0;
         right: 0;
-        height: calc(100% - 1.2em);
+        height: calc(100% - 1.3em);
         width: 100%;
         opacity: 0;
         border-radius: 10px;
@@ -88,7 +92,7 @@ main{
     h1{
         color: var(--white);
     }
-    h1:hover, h1:active, footer span:hover{
+    h1:hover, h1:active, address span:hover{
         cursor: pointer;
         color: var(--cyan);
     }
@@ -111,15 +115,16 @@ hr{
     border: solid 1px var(--line);
 }
 
-.card footer{
+.card address{
     display: flex;
     align-items: center;
+    font-style: normal;
 }
-.card footer img{
+.card address img{
     border-radius: 50%;
     border: solid 1px var(--white);
 }
-.card footer *{
+.card address *{
     margin: 1em 1em 0 0;
 }
 .active{
