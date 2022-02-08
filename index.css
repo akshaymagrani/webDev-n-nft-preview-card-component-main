@@ -51,6 +51,7 @@ body{
         height:300px;
         width:300px;
     }
+    
     @media screen and (min-width: 380px) {
         body{
             padding: 0;
@@ -64,6 +65,7 @@ body{
             width: 320px;
         }
     }
+    
     .overlay {
         position: absolute;
         top: 0;
@@ -141,3 +143,26 @@ hr{
 
 .attribution { font-size: 11px; text-align: center; padding: 10px 0}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (orientation: landscape) and (max-width: 1050px) {
+    .card{
+        display: flex;
+        flex-direction: row;
+        width:fit-content;
+        margin: 1em 1em 0;
+    }  
+    .equilibrium-logo{
+        margin-bottom: 0;
+    }
+    .image-container{
+        margin-right: 1.5em;
+    }
+    .overlay{
+        height: 100%;
+    }
+    .landscape{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
